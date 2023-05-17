@@ -1,25 +1,19 @@
 {
-  "name": "microverse-to-do-list",
+  "name": "microverse-testing-todolist",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack serve"
+
+  "directories": {
+    "test": "tests"
+
+    
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Benawi/Microverse-To-Do-list.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Benawi/Microverse-To-Do-list/issues"
-  },
-  "homepage": "https://github.com/Benawi/Microverse-To-Do-list#readme",
+
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.5",
+    "jest": "^27.0.6",
+    "ts-node": "^10.2.1",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
@@ -253,6 +247,26 @@
     "yallist": "^3.1.1",
     "yaml": "^1.10.2",
     "yargs-parser": "^20.2.9",
-    "zwitch": "^1.0.5"
-  }
+    "zwitch": "^1.0.5",
+
+    "jest-mock": "^29.5.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benawi/Microverse-Testing-ToDolist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benawi/Microverse-Testing-ToDolist/issues"
+  },
+  "homepage": "https://github.com/Benawi/Microverse-Testing-ToDolist#readme"
 }
