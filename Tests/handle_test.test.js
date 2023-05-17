@@ -7,7 +7,7 @@ const obj = {
   };
 describe('AddItem',()=>{
     test('testAdd',()=>{
-               expect(store.add(obj)).toBe('success');
+               expect(store.add(obj)).toBe('success')
     });
 
 

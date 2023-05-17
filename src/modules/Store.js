@@ -11,8 +11,7 @@ export default class Store {
   add(obj) {
     this.task_data.push(obj);
     this.updateLocalStorage();
-    return 'success';
-  }
+      }
 
   remove(index) {
     this.task_data.splice(index, 1);
