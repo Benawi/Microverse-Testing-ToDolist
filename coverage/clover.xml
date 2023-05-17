@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1684333600092" clover="3.2.0">
-  <project timestamp="1684333600093" name="All files">
-    <metrics statements="21" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="11" coveredmethods="0" elements="36" coveredelements="0" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
-    <file name="Store.js" path="C:\Users\THECREW\VscodeWorkspace\Microverse-M2-JS\Microverse-Testing-ToDolist\src\modules\Store.js">
-      <metrics statements="21" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="11" coveredmethods="0"/>
-      <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="12" count="0" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
-      <line num="14" count="0" type="stmt"/>
+<coverage generated="1684341403304" clover="3.2.0">
+  <project timestamp="1684341403304" name="All files">
+    <metrics statements="21" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="11" coveredmethods="3" elements="36" coveredelements="10" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+    <file name="Store.js" path="/Users/tams-technology/Desktop/Microverse-Testing-ToDolist/src/modules/Store.js">
+      <metrics statements="21" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="11" coveredmethods="3"/>
+      <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
       <line num="18" count="0" type="stmt"/>
       <line num="19" count="0" type="stmt"/>
       <line num="20" count="0" type="stmt"/>
