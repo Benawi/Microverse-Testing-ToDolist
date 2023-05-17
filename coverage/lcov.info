@@ -1,5 +1,5 @@
 TN:
-SF:src\modules\Store.js
+SF:src/modules/Store.js
 FN:2,(anonymous_0)
 FN:7,(anonymous_1)
 FN:11,(anonymous_2)
@@ -12,11 +12,19 @@ FN:37,(anonymous_8)
 FN:38,(anonymous_9)
 FN:45,(anonymous_10)
 FNF:11
+<<<<<<< HEAD
 FNH:4
 FNDA:1,(anonymous_0)
 FNDA:2,(anonymous_1)
 FNDA:1,(anonymous_2)
 FNDA:1,(anonymous_3)
+=======
+FNH:3
+FNDA:1,(anonymous_0)
+FNDA:1,(anonymous_1)
+FNDA:1,(anonymous_2)
+FNDA:0,(anonymous_3)
+>>>>>>> ed71a476472b0b9d69808decebde68714ea08878
 FNDA:0,(anonymous_4)
 FNDA:0,(anonymous_5)
 FNDA:0,(anonymous_6)
@@ -25,11 +33,19 @@ FNDA:0,(anonymous_8)
 FNDA:0,(anonymous_9)
 FNDA:0,(anonymous_10)
 DA:3,1
+<<<<<<< HEAD
 DA:8,2
 DA:12,1
 DA:13,1
 DA:17,1
 DA:18,1
+=======
+DA:8,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:18,0
+>>>>>>> ed71a476472b0b9d69808decebde68714ea08878
 DA:19,0
 DA:20,0
 DA:22,1
@@ -44,12 +60,22 @@ DA:40,0
 DA:42,0
 DA:46,0
 DA:47,0
+<<<<<<< HEAD
 LF:20
 LH:7
 BRDA:3,0,0,1
 BRDA:3,0,1,1
 BRDA:26,1,0,0
 BRDA:26,1,1,0
+=======
+DA:48,0
+LF:21
+LH:5
+BRDA:3,0,0,1
+BRDA:3,0,1,1
+BRDA:27,1,0,0
+BRDA:27,1,1,0
+>>>>>>> ed71a476472b0b9d69808decebde68714ea08878
 BRF:4
 BRH:2
 end_of_record
