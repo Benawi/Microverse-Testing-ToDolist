@@ -50,9 +50,8 @@ The repository also contains files for setting up linters and validators.
 - Set up a new project with Node and JEST Lib
 - jest framework Used for testing.
 - *describe()* method is uded to group test cases
-
 - A test file (add-remove.test.js) [LL1C1-L21C4](https://github.com/Benawi/Microverse-Testing-ToDolist/blob/08e120a6a08a46fe73ec7545602ea010aaec2f33/src/test/add-remove.test.js#LL1C1-L21C4) is created for a file containing the add item and delete item functions that to be tested.
-- A test file (add-remove.test.js) [L1C1-L72](https://github.com/Benawi/Microverse-TestingToDolist/blob/99d01b6e450c1bc24be68f746ecbd8071540f510/src/test/update.test.js#L1C1-L72) is created and containing the following functions:
+- A test file (update.test.js) [L1C1-L72](https://github.com/Benawi/Microverse-TestingToDolist/blob/99d01b6e450c1bc24be68f746ecbd8071540f510/src/test/update.test.js#L1C1-L72) is created and containing the following functions:
    - A function for editing the task description.
    - A function for updating an item's 'completed' status.
    - The "Clear all completed" function.
