@@ -48,7 +48,15 @@ The repository also contains files for setting up linters and validators.
 ### Features Added:
 
 - Set up a new project with Node and JEST Lib
--
+- jest framework Used for testing.
+- *describe()* method is uded to group test cases
+
+- A test file (add-remove.test.js) [LL1C1-L21C4](https://github.com/Benawi/Microverse-Testing-ToDolist/blob/08e120a6a08a46fe73ec7545602ea010aaec2f33/src/test/add-remove.test.js#LL1C1-L21C4) is created for a file containing the add item and delete item functions that to be tested.
+- A test file (add-remove.test.js) [L1C1-L72](https://github.com/Benawi/Microverse-TestingToDolist/blob/99d01b6e450c1bc24be68f746ecbd8071540f510/src/test/update.test.js#L1C1-L72) is created and containing the following functions:
+   - A function for editing the task description.
+   - A function for updating an item's 'completed' status.
+   - The "Clear all completed" function.
+   - The mock storage object usedwhich been  have created in Part 1 of this project to mock the localStorage updates.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,39 +85,17 @@ In order to run this project you need:
 - git installed on your OS.
 
 ### Instructions
-
-- Create a new GitHub repository for this exercise.
-
-#### Task 1
-
-- Write a function _stringLength(string)_ that takes any string as an argument and returns its characters count.
-- Now write a test for this function.
-- Next, expand your function to make it check if the string is at least 1 character long and not longer than 10 characters. Throw errors if those conditions are not met.
-- Add tests for the new functionality.
-
-#### Task 2
-
-- Write a function _reverseString(string)_ function. It should take a string as an argument and return it reversed.
-- Write at least one test for this function.
-
-#### Task 3
-
-In this task, you will need to write several tests for each tested function. You could write all of your tests directly at the top level, but it's better to group related tests so their output is more readable. _Jest_ has the `describe()` method just for that. Read about it [here](https://jestjs.io/docs/api#describename-fn) and apply it in your tests for this task:
-
-- Write a simple _calculator_ class or object, which will have 4 methods: _add_, _subtract_, _divide_, and _multiply_.
-- Write at least 3 tests for each of the calculator methods.
-- Group tests for each method using `describe()` method.
-
-#### Task 4
-
-In this task we're going to do things differently:
-
-- Start by writing a test for a _capitalize(string)_ function. Your test should make sure that this function takes a string as an argument and returns that string with the first character capitalized.
-- Run your test - it should fail because you don’t have the _capitalize(string)_ function implemented yet.
-- Now make your tests green by implementing the _capitalize(string)_ function. Think about what the minimum amount of code is necessary to pass this test and write it.
-
-Congratulations! In task 4, you have just used the TDD approach for development by writing tests before writing the actual functions. Note the difference in the steps you followed here, compared with those you used in the previous 3 tasks. Don't worry if this last strategy looks counterintuitive or strange at the moment, we will do several more TDD examples in the next module.
-
+- Use jest framework for testing.
+- Create a test file ([..].test.js) for a file containing the add item and delete item functions that you want to test.
+- Take a look at each of these functions. Are they pure functions? If the answer is "yes" then writing tests for them should be straightforward. Some of those functions however will update localStorage and manipulate the DOM. For those, you will need to use mocks:
+- Mock a storage object to "imitate" localStorage operations (only if you are using jest < 24.x, in newer versions localStorage is mocked automatically).
+Mock HTML to test if add/delete functions add or remove exactly one <li> element to/from the list in the DOM.
+- Make sure you group your tests using the describe() method.
+- Create a test file(s) ([..].test.js) for a file(s) containing the following functions:
+   - a function for editing the task description.
+   - a function for updating an item's 'completed' status.
+   - the "Clear all completed" function.
+- Use the mock storage object you have created in Part 1 of this project to mock the localStorage updates.
 ### Usage
 
 You can use this project by cloning it to your folder and changing index.html and styles.css files.
