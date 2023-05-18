@@ -2,42 +2,36 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    index: './src/index.js', // Entry point for the application
+  },
+  // devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
-    port: 9000,
+    static: './dist', // Serve static files from the 'dist' directory
+    port: 9001,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // Please change the template path!
-      template: './src/index.html',
+      template: './src/index.html', // Use the index.html file as a template
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    filename: '[name].bundle.js', // Use the entry point name for the bundle filename
+    path: path.resolve(__dirname, 'dist'), // Output to the 'dist' directory
+    clean: true, // Clean the output directory before building
   },
-  mode: 'production',
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader',
-          'css-loader'],
+        use: ['style-loader', 'css-loader'], // Process CSS files with 'style-loader' and 'css-loader'
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource', // Process image files as assets
       },
     ],
-  },
-  optimization: {
-    runtimeChunk: 'single',
-  },
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000,
   },
 };
